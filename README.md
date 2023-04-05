@@ -1,4 +1,4 @@
-# <div slign="center">slide</div>
+# <div align="center">slide</div>
 <h1> Sobre </h1>
  Slideshow para o meu portfólio
  <hr>
