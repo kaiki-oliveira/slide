@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slide</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Teste</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="img">
-            <a href="https://kaiki-oliveira.github.io/Blog/" target="_blank"><img src="img/blog.png" alt=""></a>
-            <h2>Blog de calistenia</h2>
+  <div class="slide-container">
+    <a href="pagina1.html" class="slide">
+      <div class="slide-content">
+        <img src="img-1.jpg" alt="Imagem do Slide 1">
+        <div class="text">
+          <h2>Slide 1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae facilis veritatis eaque laudantium, deserunt vel eos nesciunt necessitatibus! Adipisci quasi suscipit facere temporibus mollitia quis, animi molestias odit ea!</p>
         </div>
-        <div class="img">
-            <a href="https://kaiki-oliveira.github.io/Desafio-Android/" target="_blank"><img src="img/android.png" alt=""></a>
-            <h2>História do Android</h2>
+      </div>
+    </a>
+    <a href="pagina2.html" class="slide">
+      <div class="slide-content">
+        <img src="img-1.webp" alt="Imagem do Slide 2">
+        <div class="text">
+          <h2>Slide 2</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque sequi odio perferendis eius qui vitae. Praesentium iure, ad, cumque voluptatum, eaque accusantium dicta voluptas quidem ex quae animi molestias eius!</p>
         </div>
-        <div class="img">
-            <a href="https://kaiki-oliveira.github.io/Snake-Game/" target="_blank"><img src="img/snake.png" alt=""></a>
-            <h2>Jogo da cobrinha</h2>
-        </div>
+      </div>
+    </a>
+    
+  </div>
 
-    </div>
+  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+  <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
