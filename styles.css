@@ -35,6 +35,7 @@ body {
   .slide-content {
     display: flex;
     flex-direction: row;
+    background-color: #8BB96D;
   }
   
   .slide img {
