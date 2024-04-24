@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background: #F2F2F2;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 984px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1E68D7;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-pad {
+  padding: 20px;
+}
+
+.cabeçalho {
+  background: white;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+  height: 60px;
+}
+
+.cabeçalho-interno {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.principal {
+  margin: 20px 0;
+}
+
+.interior-principal {
+  display: flex;
+}
+
+.barra-principal {
+  width: 66%;
+  padding-right: 20px;
+}
+
+.lateral {
+  width: 33%;
+}
+
+.lateral .bloco-lateral:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.lista .card-news:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.card-news {
+  display: flex;
+  transition: all 200ms ease;
+}
+
+.card-news:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.card-news:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.card-news img {
+  width: 300px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+.card-news .esquerda {
+  margin-right: 10px;
+  font-size: 0;
+}
+
+.card-news .direita {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-news .título {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1C3D6D;
+}
+
+.card-news .corpo {
+  font-size: 14px;
+  color: #6E798B;
+}
+
+.card-news .rodapé {
+  margin-top: auto;
+  font-size: 12px;
+  color: #B1B8C4;
+}
+
+.mais-notícias {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.mais-notícias .item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.mais-notícias * {
+  transition: all 200ms ease;
+}
+
+.mais-notícias .item .number {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #B1B8C4;
+}
+
+.mais-notícias .item .title {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1C3D6D;
+}
+
+.mais-notícias .item .icon {
+  font-weight: bold;
+  color: #B1B8C3;
+}
+
+.mais-notícias .item:hover {
+  background: #EEEEEE;
+}
+
+.mais-notícias .item:hover .number {
+  color: #1C3D6D;
+}
+
+.mais-notícias .item:hover .icon {
+  color: #1C3D6D;
+  transform: translateX(5px);
+}
+
+
+/*slide*/
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centraliza verticalmente */
+}
+
+.slide-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Defina o máximo desejado */
+  overflow: hidden;
+}
+
+.slide {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide img {
+  width: 50%;
+  height: auto;
+}
+
+.text {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text h2 {
+  margin: 0 0 5px;
+  font-size: 24px;
+}
+
+.text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+/*cabeçalho*/
+
+#nav {
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 5%;
+  position: relative; /* Removido o z-index duplicado */
+}
+
+#store, #acc, #leaf {
+  width: 5%;
+  height: auto;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#acc {
+  width: 38px;
+  height: 38px;
+  right: 39px;
+  margin-top: -1.5px;
+}
+
+#store {
+  width: 38px;
+  height: 38px;
+  right: 68px;
+  margin-top: -1.5px;
+}
+
+#leaf {
+  width: 44px;
+  height: 44px;
+}
+
+#nav a {
+  color: #010101;
+  font-size: 1.3vw; /* Alterado para viewport width (vw) para melhor adaptação */
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 3vw;
+}
+
+#nav .nav {
+  margin-right: 2vw; /* Alterado para viewport width (vw) para melhor adaptação */
+}
+
+#nav #leaf {
+  margin-right: 1vw; /* Alterado para viewport width (vw) para melhor adaptação */
+}
