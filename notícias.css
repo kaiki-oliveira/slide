@@ -26,7 +26,7 @@ a {
 }
 
 .card {
-  background: white;
+  background: #8BB96D;
   border-radius: 5px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -178,6 +178,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Centraliza verticalmente */
+  
 }
 
 .slide-wrapper {
@@ -187,6 +188,7 @@ a {
 }
 
 .slide {
+  background-color: #8BB96D;
   text-decoration: none;
   color: inherit;
   width: 100%;
@@ -198,9 +200,6 @@ a {
   transition: transform 0.3s;
 }
 
-.slide:hover {
-  transform: scale(1.05);
-}
 
 .slide-content {
   display: flex;
